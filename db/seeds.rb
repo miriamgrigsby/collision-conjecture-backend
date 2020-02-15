@@ -76,7 +76,7 @@ Gitega = Position.create(name: "Gitega", lat: -3.4985780715942383, lon:29.924938
 Praia = Position.create(name: "Praia", lat: 14.910724639892578,lon:-23.528154373168945, country: "Cabo Verde")
 PhnomPenh = Position.create(name: "Phnom Penh", lat: 11.559907913208008, lon:104.91999816894531, country: "Cambodia")
 Yaounde = Position.create(name: "Yaounde", lat: 3.8728866577148438, lon:11.520263671875, country: "Cameroon")
-Ottawa = Position.create(name: "Ottawa", lat: 45.420433044433594, lon:75.69244384765625, country: "Canada")
+Ottawa = Position.create(name: "Ottawa", lat: 45.424721, lon: -75.69244384765625, country: "Canada")
 Bangui = Position.create(name: "Bangui", lat: 4.353013038635254, lon:18.550739288330078, country: "Central African Republic")
 NDjamena = Position.create(name: "N'Djamena", lat: 12.106473922729492, lon:15.041099548339844, country: "Chad")
 Santiago = Position.create(name: "Santiago", lat: -33.44599533081055, lon:-70.66705322265625, country: "Chila")
@@ -247,3 +247,28 @@ Sanaa = Position.create(name: "Sana'a", lat: 15.35330867767334, lon:44.206230163
 
 Lusaka = Position.create(name: "Lusaka", lat: 15.416666984558105, lon:28.28333282470703, country: "Zambia")
 Harare = Position.create(name: "Harare", lat: -17.827627182006836, lon:31.050451278686523, country: "Zimbabwe")
+
+
+1000.times.map do |i|
+    Spot.find_or_create_by(latitude: rand(-90.0..90.0), longitude: rand(-180.0..80.0), altitude: 1000000)
+end
+
+500.times.map do |i|
+    Spot.find_or_create_by(latitude: rand(-9.0..66.0), longitude: rand(-127.0..129.0), altitude: 1500000)
+end
+
+1000.times.map do |i|
+    Spot.find_or_create_by(latitude: rand(0.0..40.0), longitude: rand(-180.0..80.0), altitude: 1000000)
+end
+
+15.times.map do |i|
+    Spot.find_or_create_by(latitude: rand(-40..70.0), longitude: rand(-180.0..80.0), altitude: 1000000)
+end
+
+
+
+
+
+
+
+# byebug 
