@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -23,8 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-=======
-# collision-conjecture-backend
-
-React app that displays a 3-D globe with mapped trajectories of satellites above a users chosen location.
->>>>>>> 1ce5d7533fde395022685bc66fb316ac77f2da16
