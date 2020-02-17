@@ -1,16 +1,16 @@
 # Collision Conjecture
 
-A simple typing game with 3 levels of difficulty and 3 challenge levels to test and improve your typing proficiency. 
+A complex visualization of the Earth in 3-D with the capability to view other planets, space debris, and map satellite trajectories in with real-time data.  
 
 ## Motivation
 
-Type Your Shark is loosely based on the original flash game Typer Shark that no longer exists. It was a game used to increase typing speed and accuracy. Type Your Shark is my take on the original to target programmers. I achieved this with long and obscure words and a "spell-check" level to sharpen necessary programming skills in 3 challenging ways. The goal was to cut down on typos and mistakes to maximize the individual's coding flow, while still having fun. 
 
-![Screenshot](screenshot.png)
+
+![Screenshot](home.png)
 
 ## Getting Started
 
-If you wish to fork/clone the repo, do so in conjunction with the frontend found at [FrontEnd Repo](https://github.com/miriamgrigsby/type-your-shark-frontend). 
+If you wish to fork/clone the repo, do so in conjunction with the frontend found at [FrontEnd Repo](https://github.com/miriamgrigsby/collision-conjecture-front). 
 
 ### Ruby Version 
 
@@ -28,19 +28,29 @@ React Frontend
 
 ### Installation
 
-The app back is built with a PostgreSQL database and Ruby on Rails which requires the following commands to run: 
+The app back is built with Ruby on Rails which requires the following commands to run: 
 
     Run bundle to install the gems if using Bundler
-
-    Run rails db:create
     
     Run rails db:migrate
+    
+    Run rails db:seed
 
     Run rails s to start the server
     
-The app front is built with Vanilla JavaScript and jQuery requires the following commands to run: 
+The app front is built with the JavaScript Library React requires the following commands to run: 
     
-    Run lite-server
+    Run npm install
+    
+    yes or y to run on a different server 
+    
+### Dependencies/Node Packages
+
+The app requires the JavaScript package Cesium and the react version Resium as well as their dependencies listed below: 
+
+    npm install --save @craco/craco craco-cesium craco-plugin-react-hot-reload cesium resium
+    
+    npm install react-hot-loader
     
 ### Features
 
@@ -58,13 +68,6 @@ The words appended to the creatures are randomly chosen from an imported JavaScr
 
 User can login or create a new account at which point, the game is available for play. Signing up automatically logs the user in. The user can choose between 3 difficulties and play through 3 levels. At the end of each game, the database is updated to save that game instance to the user, or updated depending on the level. The user can delete or update their user information, or delete any game at any point in the My Stats tab. The user can see all of their individual games as well as an average of all of their stats. All data persists refresh. The user can also logout. 
 
-### Deciding the Level
-
-Each level varies in difficulty through the following properties:
-    Shark overall speed
-    number of sharks appended in the game time
-    length of word on the shark
-    
 ### Level 1 
     
 Sharks begin to swim towards the diver. The objective is type the letters on the red shark. Each letter is checked for correctness and turns green upon meeting this condition. Once the whole word is correct, the shark is removed (no need to press enter), and the next shark turns red. Kill all the sharks on the screen before they reach the diver. Even if time runs out, you must kill all the sharks. 
