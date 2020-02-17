@@ -250,7 +250,7 @@ Harare = Position.create(name: "Harare", lat: -17.827627182006836, lon:31.050451
 
 
 1000.times.map do |i|
-    Spot.find_or_create_by(latitude: rand(-90.0..90.0), longitude: rand(-180.0..80.0), altitude: 1000000)
+    Spot.find_or_create_by(latitude: rand(-90.0..90.0), longitude: rand(-180.0..80.0), altitude: 3000000)
 end
 
 500.times.map do |i|
@@ -258,11 +258,11 @@ end
 end
 
 1000.times.map do |i|
-    Spot.find_or_create_by(latitude: rand(0.0..40.0), longitude: rand(-180.0..80.0), altitude: 1000000)
+    Spot.find_or_create_by(latitude: rand(0.0..40.0), longitude: rand(-180.0..80.0), altitude: 2000000)
 end
 
 15.times.map do |i|
-    Spot.find_or_create_by(latitude: rand(-40..70.0), longitude: rand(-180.0..80.0), altitude: 1000000)
+    Spot.find_or_create_by(latitude: rand(-40..70.0), longitude: rand(-180.0..80.0), altitude: 100000)
 end
 
 
