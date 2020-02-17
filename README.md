@@ -56,33 +56,47 @@ The app requires the JavaScript package Cesium and the react version Resium as w
 
 The two main features of the app are satellite trajectory mapping in real-time and the visualization of space debris. 
 
-![Satellite Trajectories](allSatellites.png)
-
 ![Total Debris](allDebris.png)
 
 ### Operation Overview
 
+The user can click on any dot which represents the capital city of every country in the world and all 50 states. This brings up a pop-up of more information with a link to a google search about that city. The filter on the left of the home page allows the user to search only for the red dots, and filters by city name or country name. Upon enter, the globe turns to the location and zooms in. Upon reset or mapping of random satellites, the globe will zoom out and return to the default location in the United States. 
 
+![Chosen Location](filter.png)
 
-### Level 1 
+A single dot must be clicked by the user before a satellite can be mapped, then pressing the map satellite button will create the trajectory of one random satellite. To learn move about this function see the Satellites Overhead section below. To reset, or view another satellite, press the reset button. Choose random to view 8 random satellites entire trajectories around the globe. See the Satellite in Real time section below for more. The spinning planets at the bottom are all buttons that render an image of that planet over the current globe and an embedded mini-NASA page. See Planet and NASA section. Clicking the debris button will change the users view. See Debris below for more information about this feature. 
+
+### Cesium/Resium Features
+
+Cesium and Resium along with their dependencies are responsible for rendering the globe view. They allow the user to zoom in and out, play out the satellite trajectories with a special play button, and change the view based on the tool bar. In the upper right hand corner, the plus sign opens a cesium/resium toolbar. The search uses bing maps to find any place on Earth and zooms into a street view upon entering the location. The user can change the view to flat map projection instead of globe, or change the background image based on special imagery provider images. The help section also shows users ways to interact with the map using their keyboard or trackpad/mouse.
+
+![Cesium Features](cesiumFeatures.png)
+
+### Debris
     
-Sharks begin to swim towards the diver. The objective is type the letters on the red shark. Each letter is checked for correctness and turns green upon meeting this condition. Once the whole word is correct, the shark is removed (no need to press enter), and the next shark turns red. Kill all the sharks on the screen before they reach the diver. Even if time runs out, you must kill all the sharks. 
+From the home page, clicking the Debris button will switch your view to the earth surrounded by debris. The initial debris represents a single piece above every country in the world and every state in the United States. From there, the debris buttons on the left can be clicked to render the major kinds of space debris. Clicking the top Impact button will show an approximation of all the space debris above the planet, though the real number is closer to 20,000. Each kind of debris is a different color to represent the amounts based on type and altitude. This feature does NOT use real data, though it could be mapped using the same data and packages as the satellites. Instead, it is meant as a visualization of the impact people have on space and to bring attention to the implications this damage may have in the future. 
 
-![Screenshot](firstlevel.png)
+![Debris](debris.png)
 
-### Speed Round (Level 2)
+### Planets and NASA
 
-After completing level 1, the user is brought to a bonus speed round. Type all the words as quickly as you can. Careful, typing the wrong letter decrements your time. Type the whole word correctly and gain a little time. Play until the time runs out, then collect your ruby from the treasure chest to move on. This level cannot be lost.
+Click on a planet to show an image infront of the globe with an embedded NASA page that links to a search about that planet. Hover over the NASA section to see the search results, or go anywhere else on the NASA site. The user can even play videos on the site. Move the mouse off of the NASA section to minimize it. Make sure to click the spinning planet button again to remove it from view. 
 
-![Screenshot](level2.png)
+![Planets](planets.png)
 
-### Boss Round (Level 3
+![Nasa Search](nasa.png)
 
-Toxic sharks and ghost piranhas alternate in a (1:1, 1:2, 1:3) ratio depending on difficulty. Toxic sharks are always 4 letters, that when not typed quickly morph. Ghost piranhas are grayed out until they are partially on the screen and have a single character on them. All creatures must be typed correctly before they reach the diver. 25 seconds after the beginning on the level, a boss shark emerges. The boss sends cannonballs concurrently that start halfway across the screen. Type all the cannonballs before they reach the diver to slowly kill the boss. A life bar at the top of the screen indicates the health of the boss. Time is unlimited now. Stay alive, and take down the boss to win the game! 
+### Satellites in Real Time
 
-![Screenshot](third1.png)
+Click on the random button to choose 8 random satellites and their locations in real time. Press play in the bottom left of the home page to view their projected paths from now to exactly 24hrs from now. Zoom in and out, rotate around to see different perspectives, and click on an individual satellite to learn more. Speed it up by moving the dial slightly above the play button. Press reset and do it all over again. 
 
-![Screenshot](thirdlevel.png)
+![Satellite Trajectories](allSatellites.png)
+
+### Satellites Overhead
+
+The map satellite button chooses a single random satellite that could view the specified location sometime in 2018. If the randomly populated satellite does not view the chosen location, press reset and repeat the process. Sometimes, the satellite has a very wide orbit, so be sure to zoom out to check before moving on. Press the play button again to show the satellites movement over its trajectory. Speed it up by moving the dial slightly above the play button. Click on the satellite to find out more about it. 
+
+![Satellite](mapsatellite.png)
 
 ## Video Walk Through
 
