@@ -1,6 +1,6 @@
 # Collision Conjecture
 
-A complex visualization of the Earth in 3-D with the capability to view other planets, space debris, and map satellite trajectories in with real-time data.  
+A complex visualization of the Earth in 3-D with the capability to view other planets, space debris, and map satellite trajectories in real-time.  
 
 ## Motivation
 
