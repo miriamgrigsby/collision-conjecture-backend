@@ -4,7 +4,7 @@ A complex visualization of the Earth in 3-D with the capability to view other pl
 
 ## Motivation
 
-Mapping satellite trajectories in real-time requires efficient rendering which React was built for using the React Dom. Satellites are integral to everyday life so I felt it was important to provide an accurate visualization of where satellites are in relation to your specified location and all around the globe. Space Debris is another a growing issue along with global warming that has received increasing publicity because it could lead to [Kessler Syndrome](https://www.nasa.gov/centers/wstf/site_tour/remote_hypervelocity_test_laboratory/micrometeoroid_and_orbital_debris.html).  
+Mapping satellite trajectories in real-time requires efficient rendering which React was built for using the React Dom. Satellites are integral to everyday life so I felt it was important to provide an accurate visualization of where satellites are in relation to your specified location and all around the globe. Space Debris is a growing issue that has received increasing publicity because it could lead to [Kessler Syndrome](https://www.nasa.gov/centers/wstf/site_tour/remote_hypervelocity_test_laboratory/micrometeoroid_and_orbital_debris.html).  
 
 ![Screenshot](home.png)
 
