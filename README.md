@@ -4,7 +4,7 @@ A complex visualization of the Earth in 3-D with the capability to view other pl
 
 ## Motivation
 
-
+Mapping satellite trajectories in real-time requires efficient rendering which React was built for using the React Dom. Satellites are integral to everyday life so I felt it was important to provide an accurate visualization of where satellites are in relation to your specified location and all around the globe. Space Debris is another a growing issue along with global warming that has received increasing publicity because it could lead to [Kessler Syndrome](https://www.nasa.gov/centers/wstf/site_tour/remote_hypervelocity_test_laboratory/micrometeoroid_and_orbital_debris.html).  
 
 ![Screenshot](home.png)
 
@@ -54,19 +54,15 @@ The app requires the JavaScript package Cesium and the react version Resium as w
     
 ### Features
 
-Type Your Shark features animations and simple game functionality using plain JavaScript and CSS. Game and user stats  update and delete with optimistic and pessimistic rendering to improve user experience. The app also has full Authentication using JWT and is a Single-Page-App. 
+The two main features of the app are satellite trajectory mapping in real-time and the visualization of space debris. 
 
-![Screenshot](avgStats.png)
+![Satellite Trajectories](allSatellites.png)
 
-![Screenshot](gameStats.png)
-
-### Words API
-
-The words appended to the creatures are randomly chosen from an imported JavaScript file words.js with 170,000+ words. 
+![Total Debris](allDebris.png)
 
 ### Operation Overview
 
-User can login or create a new account at which point, the game is available for play. Signing up automatically logs the user in. The user can choose between 3 difficulties and play through 3 levels. At the end of each game, the database is updated to save that game instance to the user, or updated depending on the level. The user can delete or update their user information, or delete any game at any point in the My Stats tab. The user can see all of their individual games as well as an average of all of their stats. All data persists refresh. The user can also logout. 
+
 
 ### Level 1 
     
