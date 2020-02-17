@@ -68,7 +68,7 @@ The user can click on any dot which represents the capital city of every country
 
 ![Chosen Location](filter.png)
 
-A single dot must be clicked by the user before a satellite can be mapped, then pressing the map satellite button will create the trajectory of one random satellite. To learn move about this function see the Satellites Overhead section below. To reset, or view another satellite, press the reset button. Choose random to view 8 random satellites entire trajectories around the globe. See the Satellite in Real time section below for more. The spinning planets at the bottom are all buttons that render an image of that planet over the current globe and an embedded mini-NASA page. See Planet and NASA section. Clicking the debris button will change the users view. See Debris below for more information about this feature. 
+A single dot must be clicked by the user before a satellite can be mapped, then pressing the map satellite button will create the trajectory of one random satellite. To learn more about this function see the Satellites Overhead section below. To reset, or view another satellite, press the reset button. Choose random to view 8 random satellites entire trajectories around the globe. See the Satellite in Real time section below for more. The spinning planets at the bottom are all buttons that render an image of that planet over the current globe and an embedded mini-NASA page. See Planet and NASA section. Clicking the debris button will change the users view. See Debris below for more information about this feature. 
 
 ### Cesium/Resium Features
 
@@ -76,11 +76,17 @@ Cesium and Resium along with their dependencies are responsible for rendering th
 
 ![Cesium Features](cesiumFeatures.png)
 
-### Debris
-    
-From the home page, clicking the Debris button will switch your view to the earth surrounded by debris. The initial debris represents a single piece above every country in the world and every state in the United States. From there, the debris buttons on the left can be clicked to render the major kinds of space debris. Clicking the top Impact button will show an approximation of all the space debris above the planet, though the real number is closer to 20,000. Each kind of debris is a different color to represent the amounts based on type and altitude. This feature does NOT use real data, though it could be mapped using the same data and packages as the satellites. Instead, it is meant as a visualization of the impact people have on space and to bring attention to the implications this damage may have in the future. 
+### Satellites Overhead
 
-![Debris](debris.png)
+The map satellite button chooses a single random satellite that could view the specified location sometime in 2018. If the randomly populated satellite does not view the chosen location, press reset and repeat the process. Sometimes, the satellite has a very wide orbit, so be sure to zoom out to check before moving on. Press the play button to show the satellites movement over its trajectory. Speed it up by moving the dial slightly above the play button. Click on the satellite to find out more about it. 
+
+![Satellite](mapsatellite.png)
+
+### Satellites in Real Time
+
+Click on the random button to choose 8 random satellites and their locations in real time. Press play in the bottom left of the home page to view their projected paths from now to exactly 24hrs from now. Zoom in and out, rotate around to see different perspectives, and click on an individual satellite to learn more. Speed it up by moving the dial slightly above the play button. Press reset and do it all over again. 
+
+![Satellite Trajectories](allSatellites.png)
 
 ### Planets and NASA
 
@@ -90,17 +96,11 @@ Click on a planet to show an image infront of the globe with an embedded NASA pa
 
 ![Nasa Search](nasa.png)
 
-### Satellites in Real Time
+### Debris
+    
+From the home page, clicking the Debris button will switch your view to the earth surrounded by debris. The initial debris represents a single piece above every country in the world and every state in the United States. From there, the debris buttons on the left can be clicked to render the major kinds of space debris. Clicking the top Impact button will show an approximation of all the space debris above the planet, though the real number is closer to 20,000. Each kind of debris is a different color to represent the amounts based on type and altitude. This feature does NOT use real data, though it could be mapped using the same data and packages as the satellites. Instead, it is meant as a visualization of the impact people have on space and to bring attention to the implications this damage may have in the future. 
 
-Click on the random button to choose 8 random satellites and their locations in real time. Press play in the bottom left of the home page to view their projected paths from now to exactly 24hrs from now. Zoom in and out, rotate around to see different perspectives, and click on an individual satellite to learn more. Speed it up by moving the dial slightly above the play button. Press reset and do it all over again. 
-
-![Satellite Trajectories](allSatellites.png)
-
-### Satellites Overhead
-
-The map satellite button chooses a single random satellite that could view the specified location sometime in 2018. If the randomly populated satellite does not view the chosen location, press reset and repeat the process. Sometimes, the satellite has a very wide orbit, so be sure to zoom out to check before moving on. Press the play button again to show the satellites movement over its trajectory. Speed it up by moving the dial slightly above the play button. Click on the satellite to find out more about it. 
-
-![Satellite](mapsatellite.png)
+![Debris](debris.png)
 
 ### Notes about Satellite Mapping
 
