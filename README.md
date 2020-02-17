@@ -2,6 +2,10 @@
 
 A complex visualization of the Earth in 3-D with the capability to view other planets, space debris, and map satellite trajectories in real-time.  
 
+## Video Walk Through
+
+* [Walk Through Video](https://www.youtube.com/watch?v=_EJAylseR3s)
+
 ## Motivation
 
 Mapping satellite trajectories in real-time requires efficient rendering which React was built for using the React Dom. Satellites are integral to everyday life so I felt it was important to provide an accurate visualization of where satellites are in relation to your specified location and all around the globe. Space Debris is a growing issue that has received increasing publicity because it could lead to [Kessler Syndrome](https://www.nasa.gov/centers/wstf/site_tour/remote_hypervelocity_test_laboratory/micrometeoroid_and_orbital_debris.html).  
@@ -98,6 +102,6 @@ The map satellite button chooses a single random satellite that could view the s
 
 ![Satellite](mapsatellite.png)
 
-## Video Walk Through
+### Notes about Satellite Mapping
 
-* [Walk Through Video](https://www.youtube.com/watch?v=_EJAylseR3s)
+To actually map the satellites, see the Globe.js component. Fetches were made in App.js to the respective APIs and to the backend where the locational data was store. Those responses were saved to state and passed down to Globe. There, several Cesium/Resium items are imported for use. The Viewer controls what you see (background image of Earth, the spinning etc). The Entity must be placed inside the Viewer and that renders each red dot shown. Map through the backend fetch response prop and create an Entity for every item in the the array. Convert the API fetch data to CZML data for satellite mapping. Each Entity must have a position using the Cartesian 3 (though the 3rd option, altitude, is not necessary), point (this is set above with a color and size). The onClick action is what allows the user to click on a spot which sets the state of latitude and longitude to map the satellites based on location. The description determines what is located in the pop-up that comes up when a dot is clicked on. Render the satellite trajectory by adding a CzmlDataSource component to the Viewer. The CameraFlyTo component is used to spin the globe to the location when the user uses the filter function or maps satellites. The Cesium documentation is confusing and does not always correctly translate to Resium (using Cesium in React). Follow the same format as the return section of Globe.js to make most features Cesium offers work for what you need. 
