@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
   def index
-    data = Data.find(:all)
-    render :json => data
+    render :json => data, :root => false
   end
 end
