@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    render json: 
+    render "index.html"
   end
 end
