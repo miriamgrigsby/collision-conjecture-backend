@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-    render :json => data, :root => false
+    @position = Position.all
+    @spots = Spot.all
+    render json: @spots, @position
   end
 end
